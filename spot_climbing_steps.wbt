@@ -1,0 +1,45 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/boston_dynamics/spot/protos/Spot.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.08442070401235834 0.07695424818972757 0.993454170266355 1.6698366349359142
+  position 0.06209297416441362 -7.292013626773231 1.7745380534428954
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0.07 0 0
+  floorSize 10 10
+}
+Spot {
+  translation -2.87 0 0.624
+  controller "spot_walking_DRL"
+  supervisor TRUE
+}
+WoodenBox {
+  translation 1.2 -0.199343 0.119498
+  rotation 1 0 0 -3.1415853071795863
+  name "step1"
+  size 1 0.8 0.2
+}
+WoodenBox {
+  translation 2.19 -0.187579 0.220002
+  rotation -2.5176899999838494e-06 2.5477399999836565e-06 -0.9999999999935851 -3.1415853071795863
+  name "step2"
+  size 1 0.8 0.4
+}
+WoodenBox {
+  translation 3.2 -0.177593 0.34
+  rotation -2.5176899999839112e-06 2.53814999998378e-06 -0.9999999999936096 -3.1415853071795863
+  name "step3"
+  size 1 0.8 0.6
+}
